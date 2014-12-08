@@ -1,0 +1,8 @@
+C:\Users\svs\Documents\Visual Studio 2013\Projects\KESJCrawler\KESJCrawler\bin\KESJCrawler.dll.config
+C:\Users\svs\Documents\Visual Studio 2013\Projects\KESJCrawler\KESJCrawler\bin\KESJCrawler.dll
+C:\Users\svs\Documents\Visual Studio 2013\Projects\KESJCrawler\KESJCrawler\bin\KESJCrawler.pdb
+C:\Users\svs\Documents\Visual Studio 2013\Projects\KESJCrawler\KESJCrawler\bin\Newtonsoft.Json.dll
+C:\Users\svs\Documents\Visual Studio 2013\Projects\KESJCrawler\KESJCrawler\bin\Newtonsoft.Json.xml
+C:\Users\svs\Documents\Visual Studio 2013\Projects\KESJCrawler\KESJCrawler\obj\Debug\KESJCrawler.dll
+C:\Users\svs\Documents\Visual Studio 2013\Projects\KESJCrawler\KESJCrawler\obj\Debug\KESJCrawler.pdb
+C:\Users\svs\Documents\Visual Studio 2013\Projects\KESJCrawler\KESJCrawler\obj\Debug\KESJCrawler.csprojResolveAssemblyReference.cache
