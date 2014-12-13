@@ -18,12 +18,27 @@ namespace KESJCrawler
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //Start Crawling
+            try
+            {
+                PostJson getPostData = new PostJson();
+                String result = getPostData.PostJsonWebCrawlToApi();
+            
+                //Return response from API
+                Response.Write(result);
+            
+            }
+            catch (Exception exc)
+            {
+                LogFile.LogError(exc.Message, "unknown");
+            }
+            finally
+            {
 
+            }
 
+            
 
-            string bas = "test";
-            //test the output
-            Response.Write(bas);
 
         }
     }

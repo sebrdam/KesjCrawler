@@ -15,20 +15,31 @@ namespace KESJCrawler.App_Code
         {
             // Get the config file to read definitions
             List<itemsconfig> config = ReadConfig.getConfigList();
-
+                        
             foreach (var item in config)
             {
-                MatchCollection firstmatch = MatchRegex.GetFirstMatch(item.pattern, item.url);
+                //Use Regex to get match for first block
+                MatchCollection firstMatch = MatchRegex.GetFirstMatch(item.pattern, item.url);
 
-                foreach (Match match in firstmatch)
+                foreach (Match match in firstMatch)
                 {
                     string omschrijving = MatchRegex.GetMatch(item.subpatternomschrijving, match.Groups[1].Value);
-                    string linkurl = MatchRegex.GetMatch(item.subpatternlink, match.Groups[1].Value);
+                    string linkUrl = MatchRegex.GetMatch(item.subpatternlink, match.Groups[1].Value);
                     string prijs = MatchRegex.GetMatch(item.subpatternprijs, match.Groups[1].Value);
-                    double prijsitem = MatchRegex.StripPrijsToDouble(prijs);
+                    string picUrl = MatchRegex.GetMatch(item.picurl, match.Groups[1].Value);
+                    int prijsItem = MatchRegex.StripPrijsToDouble(prijs);
 
+                    //Set url for component
+                    string urlComponent = item.provider + linkUrl;
 
-                    items.Add(new itemspost { omschrijving = omschrijving, category = item.category, subcategory = item.subcategory, linkurl = linkurl, prijs = prijsitem, provider = item.provider });
+                    //strip data omschrijving
+                    omschrijving = MatchRegex.StripDataOms(omschrijving);
+                    //get the specific specs from componentUrl
+                    string dataSpecs = MatchRegex.GetComponentMatch(item.subpatterndata, urlComponent);
+                    //strip dataspecs
+                    dataSpecs = MatchRegex.StripData(dataSpecs);
+                    // Add to list for posting to API
+                    items.Add(new itemspost { omschrijving = omschrijving, category = item.category, subcategory = item.subcategory, linkurl = linkUrl, prijs = prijsItem, provider = item.provider, picurl=picUrl, dataspecs = dataSpecs });
 
                 }
 

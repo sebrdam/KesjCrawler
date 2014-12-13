@@ -15,5 +15,7 @@ namespace KESJCrawler
         public string subpatternlink;
         public string subpatternomschrijving;
         public string url;
+        public string picurl;
+        public string subpatterndata;
     }
 }

@@ -10,34 +10,64 @@ namespace KESJCrawler.App_Code
 {
     public class ReadConfig
     {
+       
         public static List<itemsconfig> getConfigList()
         {
-            String url1 = "http://127.0.0.1/test1.json";
-            string json1;
-            List<itemsconfig> items;
+
+            string url = Config.Config.configUrl;
+            String json;
+            List<itemsconfig> items = null;
+            //Problem reading Jsonfile from python. Make my own readable Json file
+            String jsonFile = "[";
+
+            var request = (HttpWebRequest)WebRequest.Create(url);
+            request.UserAgent = "KESJ Web Crawler";
+            try
+            {
+                using (var response = request.GetResponse() as HttpWebResponse)
+                {
+                    if (request.HaveResponse && response != null)
+                    {
+                        using (var reader = new StreamReader(response.GetResponseStream()))
+                        {
+                            // Read out the Json file from python
+                            json = reader.ReadToEnd();
+                            dynamic deserializedValue = JsonConvert.DeserializeObject(json);
+                            var values = deserializedValue["data"];
+
+                            for (int i = 0; i < values.Count; i++)
+                            {
+                                jsonFile += values[i];
+                                jsonFile += ",";
+                            }
+                            jsonFile += "]";
+
+                            //Add to list for further reading
+                            items = JsonConvert.DeserializeObject<List<itemsconfig>>(jsonFile);
+                        }
+                    }
+                }
 
 
-            HttpWebRequest request1 = (HttpWebRequest)HttpWebRequest.Create(url1);
-            request1.UserAgent = "KESJ Web Crawler";
-            WebResponse response1 = request1.GetResponse();
-            Stream stream1 = response1.GetResponseStream();
-            StreamReader r = new StreamReader(stream1);
-            json1 = r.ReadToEnd();
-            items = JsonConvert.DeserializeObject<List<itemsconfig>>(json1);
-
-
-
-
-
-            /// TODO : Hier moet ik nog opvangen als JSON Configfile niet beschikbaar is
-            //if (request1.Accept == null)
-            //   System.Console.Write("Config file niet bereikbaar");  
-
+            }
+            catch (WebException wex)
+            {
+                if (wex.Response != null)
+                {
+                    using (var errorResponse = (HttpWebResponse)wex.Response)
+                    {
+                        using (var reader = new StreamReader(errorResponse.GetResponseStream()))
+                        {
+                            string error = reader.ReadToEnd();
+                            //Log error and program will stop
+                            LogFile.LogError(error, url);
+                            
+                        }
+                    }
+                }
+            }
 
             return items;
-
-
-
 
         }
     }

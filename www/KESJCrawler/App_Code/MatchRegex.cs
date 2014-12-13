@@ -11,21 +11,35 @@ namespace KESJCrawler.App_Code
 
         public static MatchCollection GetFirstMatch(string pattern, string url)
         {
-            Regex firstpattern = new Regex(pattern, RegexOptions.Singleline | RegexOptions.Compiled | RegexOptions.IgnoreCase);
+            Regex firstPattern = new Regex(pattern, RegexOptions.Singleline | RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
             string htmlText = ReadlUrl.GetResponse(url);
 
-            MatchCollection first = firstpattern.Matches(htmlText);
+            MatchCollection first = firstPattern.Matches(htmlText);
 
             return first;
 
         }
 
+        public static string GetComponentMatch(string pattern, string url)
+        {
+            Regex firstPattern = new Regex(pattern, RegexOptions.Singleline | RegexOptions.Compiled | RegexOptions.IgnoreCase);
+
+            string htmlText = ReadlUrl.GetResponse(url);
+
+            Match first = firstPattern.Match(htmlText);
+
+            string match1 = first.Groups[1].Value;
+
+            return match1;
+
+        }
+
         public static string GetMatch(string pattern, string text)
         {
-            Regex firstpattern = new Regex(pattern, RegexOptions.Singleline | RegexOptions.Compiled | RegexOptions.IgnoreCase);
+            Regex firstPattern = new Regex(pattern, RegexOptions.Singleline | RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
-            Match first = firstpattern.Match(text);
+            Match first = firstPattern.Match(text);
 
             string match = first.Groups[1].Value;
 
@@ -33,12 +47,33 @@ namespace KESJCrawler.App_Code
 
         }
 
-        public static double StripPrijsToDouble(string text)
+        public static int StripPrijsToDouble(string text)
         {
-            string replaced = Regex.Replace(text, @"[^0-9€,]", "");
-            double prijs = Convert.ToDouble(replaced);
+            string replaced = Regex.Replace(text, "-", "00");
+            replaced = Regex.Replace(replaced, @"[^0-9€]", "");
+            //int prijs = Convert.ToDouble(replaced);
+            int prijs = Convert.ToInt32(replaced);
 
             return prijs;
         }
+
+        public static string StripData(string data)
+        {
+            string dataSpecs = Regex.Replace(data, "<.*?>", "-");
+            Regex pattern = new Regex("[\"'!<>(),\t\r®.;µ ]");
+            dataSpecs = pattern.Replace(dataSpecs, "");
+
+            return dataSpecs;
+        }
+
+        public static string StripDataOms(string data)
+        {
+            string dataSpecs = Regex.Replace(data, "<.*?>", "");
+            Regex pattern = new Regex("[\"'!<>(),\t\r®.;µ]");
+            dataSpecs = pattern.Replace(dataSpecs, "");
+
+            return dataSpecs;
+        }
+
     }
 }

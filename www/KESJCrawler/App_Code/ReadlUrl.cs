@@ -11,14 +11,44 @@ namespace KESJCrawler.App_Code
     {
         public static string GetResponse(string url)
         {
-            HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(url);
-            request.UserAgent = "KESJ Web Crawler";
-            WebResponse response = request.GetResponse();
-            Stream stream = response.GetResponseStream();
-            StreamReader reader = new StreamReader(stream);
-            string htmlText = reader.ReadToEnd();
+            string result = null;
+            var request = (HttpWebRequest)WebRequest.Create(url);
+            request.UserAgent = "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/6.0;)";
+            try
+            {
+                using (var response = request.GetResponse() as HttpWebResponse)
+                {
+                    if (request.HaveResponse && response != null)
+                    {
+                        using (var reader = new StreamReader(response.GetResponseStream()))
+                        {
+                            result = reader.ReadToEnd();
+                           
+                        }
+                    }
+                }
 
-            return htmlText;
+                
+            }
+            catch (WebException wex)
+            {
+                if (wex.Response != null)
+                {
+                    using (var errorResponse = (HttpWebResponse)wex.Response)
+                    {
+                        using (var reader = new StreamReader(errorResponse.GetResponseStream()))
+                        {
+                            string error = reader.ReadToEnd();
+                            //Log the error and return the error for continue crawling next
+                            LogFile.LogError(error, url);
+                            return error;
+                        }
+                    }
+                }
+            }
+
+            return result;
+
         }
     }
 }

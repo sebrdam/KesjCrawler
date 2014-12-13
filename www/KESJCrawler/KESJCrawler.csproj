@@ -65,11 +65,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Code\LogFile.cs" />
     <Compile Include="App_Code\PostJson.cs" />
     <Compile Include="App_Code\ReadlUrl.cs" />
     <Compile Include="App_Code\ReadConfig.cs" />
     <Compile Include="App_Code\MatchRegex.cs" />
     <Compile Include="App_Code\WebCrawl.cs" />
+    <Compile Include="Config\Config.cs" />
     <Compile Include="Crawler.aspx.cs">
       <DependentUpon>Crawler.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

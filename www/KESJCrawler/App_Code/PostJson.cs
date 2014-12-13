@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.Script.Serialization;
 
@@ -13,32 +14,34 @@ namespace KESJCrawler.App_Code
     public class PostJson
     {
 
-        public bool PostJsonWebCrawlToApi()
+        public string PostJsonWebCrawlToApi()
         {
-            //try post json to python TODO: Make own class
-            WebCrawl bastest = new WebCrawl();
-            List<itemspost> test = bastest.CrawlWebsite();
+            
+            WebCrawl crawl = new WebCrawl();
+            List<itemspost> data = crawl.CrawlWebsite();
 
-            string bas = JsonConvert.SerializeObject(new { data = test }, Formatting.Indented);
+            var result = "";
 
-            string url = "http://127.0.0.1:5000/";
+            string post = JsonConvert.SerializeObject(new { data = data }, Formatting.Indented);
+
+            string url = Config.Config.postUrl;
 
             using (var client = new WebClient())
             {
 
-                string userName = "user";
-                string password = "1234";
+                string userName = Config.Config.userName;
+                string password = Config.Config.password;
 
                 string credentials = Convert.ToBase64String(Encoding.ASCII.GetBytes(userName + ":" + password));
 
                 client.Headers[HttpRequestHeader.Authorization] = string.Format("Basic {0}", credentials);
                 client.Headers.Add("Content-Type", "application/json");
-                var result = client.UploadString(url, "POST", bas);
+                result = client.UploadString(url, "POST", post);
+                
             }
-            
 
 
-            return true;
+            return result;
         }
 
         
