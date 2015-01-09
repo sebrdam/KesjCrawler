@@ -27,7 +27,11 @@ namespace KESJCrawler.App_Code
                     string linkUrl = MatchRegex.GetMatch(item.subpatternlink, match.Groups[1].Value);
                     string prijs = MatchRegex.GetMatch(item.subpatternprijs, match.Groups[1].Value);
                     string picUrl = MatchRegex.GetMatch(item.picurl, match.Groups[1].Value);
-                    int prijsItem = MatchRegex.StripPrijsToDouble(prijs);
+                    int prijsItem = MatchRegex.StripPrijsToDouble(prijs, linkUrl);
+
+                    //Strip picurl
+                    picUrl = MatchRegex.StripPicUrl(picUrl);
+                    picUrl = item.provider + picUrl;
 
                     //Set url for component
                     string urlComponent = item.provider + linkUrl;
@@ -39,7 +43,7 @@ namespace KESJCrawler.App_Code
                     //strip dataspecs
                     dataSpecs = MatchRegex.StripData(dataSpecs);
                     // Add to list for posting to API
-                    items.Add(new itemspost { omschrijving = omschrijving, category = item.category, subcategory = item.subcategory, linkurl = linkUrl, prijs = prijsItem, provider = item.provider, picurl=picUrl, dataspecs = dataSpecs });
+                    items.Add(new itemspost { omschrijving = omschrijving, category = item.category, subcategory = item.subcategory, linkurl = urlComponent, prijs = prijsItem, provider = item.provider, picurl=picUrl, dataspecs = dataSpecs });
 
                 }
 

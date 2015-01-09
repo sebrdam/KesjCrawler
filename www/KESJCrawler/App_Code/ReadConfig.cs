@@ -60,7 +60,7 @@ namespace KESJCrawler.App_Code
                         {
                             string error = reader.ReadToEnd();
                             //Log error and program will stop
-                            LogFile.LogError(error, url);
+                            LogFile.LogMe(error, url);
                             
                         }
                     }

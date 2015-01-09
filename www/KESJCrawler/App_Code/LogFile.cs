@@ -12,7 +12,7 @@ namespace KESJCrawler.App_Code
         private static XmlDocument log = new XmlDocument();
 
 
-        public static void LogError(string error, string url)
+        public static void LogMe(string error, string url)
         {
             //load the logfile from config and log errors
             log.Load(Config.Config.logFile);

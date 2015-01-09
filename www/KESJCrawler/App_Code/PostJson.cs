@@ -20,9 +20,13 @@ namespace KESJCrawler.App_Code
             WebCrawl crawl = new WebCrawl();
             List<itemspost> data = crawl.CrawlWebsite();
 
+            
             var result = "";
 
             string post = JsonConvert.SerializeObject(new { data = data }, Formatting.Indented);
+
+            //Write post to sql file. For backup if post don't succeed
+            WritePostToSql.WriteToFile(post);
 
             string url = Config.Config.postUrl;
 
@@ -40,7 +44,7 @@ namespace KESJCrawler.App_Code
                 
             }
 
-
+            
             return result;
         }
 

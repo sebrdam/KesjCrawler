@@ -47,7 +47,7 @@ namespace KESJCrawler.App_Code
 
         }
 
-        public static int StripPrijsToDouble(string text)
+        public static int StripPrijsToDouble(string text, string url)
         {
             string replaced = Regex.Replace(text, "-", "00");
             replaced = Regex.Replace(replaced, @"[^0-9€]", "");
@@ -70,6 +70,15 @@ namespace KESJCrawler.App_Code
         {
             string dataSpecs = Regex.Replace(data, "<.*?>", "");
             Regex pattern = new Regex("[\"'!<>(),\t\r®.;µ]");
+            dataSpecs = pattern.Replace(dataSpecs, "");
+
+            return dataSpecs;
+        }
+
+        public static string StripPicUrl(string data)
+        {
+            string dataSpecs = Regex.Replace(data, "<.*?>", "");
+            Regex pattern = new Regex("[()]");
             dataSpecs = pattern.Replace(dataSpecs, "");
 
             return dataSpecs;

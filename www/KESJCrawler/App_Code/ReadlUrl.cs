@@ -40,7 +40,7 @@ namespace KESJCrawler.App_Code
                         {
                             string error = reader.ReadToEnd();
                             //Log the error and return the error for continue crawling next
-                            LogFile.LogError(error, url);
+                            LogFile.LogMe(error, url);
                             return error;
                         }
                     }
