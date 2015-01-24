@@ -1,0 +1,33 @@
+{
+  "data": [
+    
+    {
+      "category": "Moederbord", 
+      "pattern": "<div class=\"listRow\">(.*?)<div class=\"clear\">", 
+      "provider": "http://www.alternate.nl", 
+      "subcategory": "Intel - Socket 2011-3", 
+      "subpatternlink": "<a class=\"productLink\" href=\"(.*?)\"", 
+      "subpatternomschrijving": "<span class=\"pic\" title=\"(.*?)\"", 
+      "subpatternprijs": "&euro; (.*?)</sup>", 
+      "subpatterndata": "<div class=\"moreInfos\">(.*?)informatie",
+      "picurl": "image:url(.*?)\"></span>",
+      "url": "http://www.alternate.nl/html/product/listing.html?navId=20673&tk=7&lk=13777"
+    },
+    
+    {
+      "category": "Moederbord", 
+      "pattern": "<div id=\"image\">(.*?)<div id=\"image\">", 
+      "provider": "http://www.informatique.nl", 
+      "subcategory": "Intel - Socket 2011-3", 
+      "subpatternlink": "<a href=\"http:\/\/www.informatique.nl(.*?)\"><img src=\"", 
+      "subpatternomschrijving": "<div id=\"title\">(.*?)</a></div>", 
+      "subpatternprijs": "<div id=\"price\">(.*?)</div>", 
+      "subpatterndata": "<table id=\"details\" class=\"specs left\">(.*?)</div>",
+      "picurl": "<img src=\"(.*?)\" /></a>",
+      "url": "http://www.informatique.nl/?m=usl&g=726&view=6&&sort=pop&pl=28"
+    },
+
+    
+    
+  ]
+}

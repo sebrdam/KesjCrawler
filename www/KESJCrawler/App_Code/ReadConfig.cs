@@ -6,6 +6,12 @@ using System.Linq;
 using System.Net;
 using System.Web;
 
+/*
+  Read config file van api webservice - parameters crawl website
+  In opdracht van Hogeschool Rotterdam module : INFPRJ2110
+  S. van Staden - 22-01-2015 - studentnr:0883388
+*/
+
 namespace KESJCrawler.App_Code
 {
     public class ReadConfig

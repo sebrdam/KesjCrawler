@@ -1,0 +1,534 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE dotfuscatorMap SYSTEM "http://www.preemptive.com/dotfuscator/dtd/dotfuscatorMap_v1.2.dtd">
+<dotfuscatorMap version="1.1">
+    <header>
+        <timestamp>2015-01-05T18:59:39</timestamp>
+        <product version="5.5.4954.46574" user="Unregistered " serial="000-00-000-391">Dotfuscator and Analytics Community Edition</product>
+    </header>
+    <mapping>
+        <module>
+            <name>KESJCrawler.dll</name>
+            <type>
+                <arity>1</arity>
+                <genericparameter sequence="0">
+                    <name>&lt;data&gt;j__TPar</name>
+                    <newname>a</newname>
+                </genericparameter>
+                <name>&lt;&gt;f__AnonymousType0`1</name>
+                <newname>a</newname>
+                <methodlist>
+                    <method>
+                        <signature>void(!0)</signature>
+                        <name>.ctor</name>
+                    </method>
+                    <method>
+                        <signature>bool(object)</signature>
+                        <name>Equals</name>
+                    </method>
+                    <method>
+                        <signature>!0()</signature>
+                        <name>get_data</name>
+                        <newname>b</newname>
+                    </method>
+                    <method>
+                        <signature>int32()</signature>
+                        <name>GetHashCode</name>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>ToString</name>
+                    </method>
+                </methodlist>
+                <fieldlist>
+                    <field>
+                        <signature>!0</signature>
+                        <name>&lt;data&gt;i__Field</name>
+                        <newname>a</newname>
+                    </field>
+                </fieldlist>
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>KESJCrawler.App_Code.LogFile</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>.cctor</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>.ctor</name>
+                    </method>
+                    <method>
+                        <signature>void(string, string)</signature>
+                        <name>LogMe</name>
+                    </method>
+                </methodlist>
+                <fieldlist>
+                    <field>
+                        <signature>System.Xml.XmlDocument</signature>
+                        <name>log</name>
+                        <newname>a</newname>
+                    </field>
+                </fieldlist>
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>KESJCrawler.App_Code.MatchRegex</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>.ctor</name>
+                    </method>
+                    <method>
+                        <signature>string(string, string)</signature>
+                        <name>GetComponentMatch</name>
+                    </method>
+                    <method>
+                        <signature>System.Text.RegularExpressions.MatchCollection(string, string)</signature>
+                        <name>GetFirstMatch</name>
+                    </method>
+                    <method>
+                        <signature>string(string, string)</signature>
+                        <name>GetMatch</name>
+                    </method>
+                    <method>
+                        <signature>string(string)</signature>
+                        <name>StripData</name>
+                    </method>
+                    <method>
+                        <signature>string(string)</signature>
+                        <name>StripDataOms</name>
+                    </method>
+                    <method>
+                        <signature>int32(string)</signature>
+                        <name>StripPrijsToDouble</name>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>KESJCrawler.App_Code.PostJson</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>.ctor</name>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>PostJsonWebCrawlToApi</name>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>KESJCrawler.App_Code.ReadConfig</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>.ctor</name>
+                    </method>
+                    <method>
+                        <signature>System.Collections.Generic.List`1&lt;KESJCrawler.itemsconfig&gt;()</signature>
+                        <name>getConfigList</name>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>KESJCrawler.App_Code.ReadConfig/&lt;getConfigList&gt;o__SiteContainer0</name>
+                <newname>KESJCrawler.App_Code.ReadConfig/a</newname>
+                <methodlist />
+                <fieldlist>
+                    <field>
+                        <signature>System.Runtime.CompilerServices.CallSite`1&lt;System.Func`4&lt;System.Runtime.CompilerServices.CallSite,object,string,object&gt;&gt;</signature>
+                        <name>&lt;&gt;p__Site1</name>
+                        <newname>a</newname>
+                    </field>
+                    <field>
+                        <signature>System.Runtime.CompilerServices.CallSite`1&lt;System.Func`3&lt;System.Runtime.CompilerServices.CallSite,object,string&gt;&gt;</signature>
+                        <name>&lt;&gt;p__Site2</name>
+                        <newname>b</newname>
+                    </field>
+                    <field>
+                        <signature>System.Runtime.CompilerServices.CallSite`1&lt;System.Func`4&lt;System.Runtime.CompilerServices.CallSite,string,object,object&gt;&gt;</signature>
+                        <name>&lt;&gt;p__Site3</name>
+                        <newname>c</newname>
+                    </field>
+                    <field>
+                        <signature>System.Runtime.CompilerServices.CallSite`1&lt;System.Func`4&lt;System.Runtime.CompilerServices.CallSite,object,int32,object&gt;&gt;</signature>
+                        <name>&lt;&gt;p__Site4</name>
+                        <newname>d</newname>
+                    </field>
+                    <field>
+                        <signature>System.Runtime.CompilerServices.CallSite`1&lt;System.Func`3&lt;System.Runtime.CompilerServices.CallSite,object,bool&gt;&gt;</signature>
+                        <name>&lt;&gt;p__Site5</name>
+                        <newname>e</newname>
+                    </field>
+                    <field>
+                        <signature>System.Runtime.CompilerServices.CallSite`1&lt;System.Func`4&lt;System.Runtime.CompilerServices.CallSite,int32,object,object&gt;&gt;</signature>
+                        <name>&lt;&gt;p__Site6</name>
+                        <newname>f</newname>
+                    </field>
+                    <field>
+                        <signature>System.Runtime.CompilerServices.CallSite`1&lt;System.Func`3&lt;System.Runtime.CompilerServices.CallSite,object,object&gt;&gt;</signature>
+                        <name>&lt;&gt;p__Site7</name>
+                        <newname>g</newname>
+                    </field>
+                </fieldlist>
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>KESJCrawler.App_Code.ReadlUrl</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>.ctor</name>
+                    </method>
+                    <method>
+                        <signature>string(string)</signature>
+                        <name>GetResponse</name>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>KESJCrawler.App_Code.WebCrawl</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>.ctor</name>
+                    </method>
+                    <method>
+                        <signature>System.Collections.Generic.List`1&lt;KESJCrawler.itemspost&gt;()</signature>
+                        <name>CrawlWebsite</name>
+                    </method>
+                </methodlist>
+                <fieldlist>
+                    <field>
+                        <signature>System.Collections.Generic.List`1&lt;KESJCrawler.itemspost&gt;</signature>
+                        <name>items</name>
+                        <newname>a</newname>
+                    </field>
+                </fieldlist>
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>KESJCrawler.Config.Config</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>.ctor</name>
+                    </method>
+                </methodlist>
+                <fieldlist>
+                    <field>
+                        <signature>string</signature>
+                        <name>configUrl</name>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>logFile</name>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>password</name>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>postUrl</name>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>userName</name>
+                    </field>
+                </fieldlist>
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>KESJCrawler.Crawler</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>.ctor</name>
+                    </method>
+                    <method>
+                        <signature>void(object, System.EventArgs)</signature>
+                        <name>Page_Load</name>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>KESJCrawler.itemsconfig</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>.ctor</name>
+                    </method>
+                </methodlist>
+                <fieldlist>
+                    <field>
+                        <signature>string</signature>
+                        <name>category</name>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>pattern</name>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>picurl</name>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>provider</name>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>subcategory</name>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>subpatterndata</name>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>subpatternlink</name>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>subpatternomschrijving</name>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>subpatternprijs</name>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>url</name>
+                    </field>
+                </fieldlist>
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>KESJCrawler.itemspost</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>.ctor</name>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_category</name>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_dataspecs</name>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_linkurl</name>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_omschrijving</name>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_picurl</name>
+                    </method>
+                    <method>
+                        <signature>int32()</signature>
+                        <name>get_prijs</name>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_provider</name>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_subcategory</name>
+                    </method>
+                    <method>
+                        <signature>void(string)</signature>
+                        <name>set_category</name>
+                    </method>
+                    <method>
+                        <signature>void(string)</signature>
+                        <name>set_dataspecs</name>
+                    </method>
+                    <method>
+                        <signature>void(string)</signature>
+                        <name>set_linkurl</name>
+                    </method>
+                    <method>
+                        <signature>void(string)</signature>
+                        <name>set_omschrijving</name>
+                    </method>
+                    <method>
+                        <signature>void(string)</signature>
+                        <name>set_picurl</name>
+                    </method>
+                    <method>
+                        <signature>void(int32)</signature>
+                        <name>set_prijs</name>
+                    </method>
+                    <method>
+                        <signature>void(string)</signature>
+                        <name>set_provider</name>
+                    </method>
+                    <method>
+                        <signature>void(string)</signature>
+                        <name>set_subcategory</name>
+                    </method>
+                </methodlist>
+                <fieldlist>
+                    <field>
+                        <signature>string</signature>
+                        <name>&lt;category&gt;k__BackingField</name>
+                        <newname>a</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>&lt;dataspecs&gt;k__BackingField</name>
+                        <newname>g</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>&lt;linkurl&gt;k__BackingField</name>
+                        <newname>c</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>&lt;omschrijving&gt;k__BackingField</name>
+                        <newname>d</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>&lt;picurl&gt;k__BackingField</name>
+                        <newname>h</newname>
+                    </field>
+                    <field>
+                        <signature>int32</signature>
+                        <name>&lt;prijs&gt;k__BackingField</name>
+                        <newname>e</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>&lt;provider&gt;k__BackingField</name>
+                        <newname>f</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>&lt;subcategory&gt;k__BackingField</name>
+                        <newname>b</newname>
+                    </field>
+                </fieldlist>
+                <propertylist>
+                    <property>
+                        <signature>string()</signature>
+                        <name>category</name>
+                    </property>
+                    <property>
+                        <signature>string()</signature>
+                        <name>dataspecs</name>
+                    </property>
+                    <property>
+                        <signature>string()</signature>
+                        <name>linkurl</name>
+                    </property>
+                    <property>
+                        <signature>string()</signature>
+                        <name>omschrijving</name>
+                    </property>
+                    <property>
+                        <signature>string()</signature>
+                        <name>picurl</name>
+                    </property>
+                    <property>
+                        <signature>int32()</signature>
+                        <name>prijs</name>
+                    </property>
+                    <property>
+                        <signature>string()</signature>
+                        <name>provider</name>
+                    </property>
+                    <property>
+                        <signature>string()</signature>
+                        <name>subcategory</name>
+                    </property>
+                </propertylist>
+                <eventlist />
+            </type>
+        </module>
+    </mapping>
+    <statistics>
+        <statisticline>
+            <description>Total Classes</description>
+            <statistic>12</statistic>
+        </statisticline>
+        <statisticline>
+            <description>Total Methods</description>
+            <statistic>44</statistic>
+        </statisticline>
+        <statisticline>
+            <description>Total Fields</description>
+            <statistic>33</statistic>
+        </statisticline>
+        <statisticline>
+            <description>Total Properties</description>
+            <statistic>8</statistic>
+        </statisticline>
+        <statisticline>
+            <description>Total Events</description>
+            <statistic>0</statistic>
+        </statisticline>
+        <statisticline>
+            <description>Total Classes Renamed</description>
+            <statistic>2</statistic>
+            <statistic>16.67 %</statistic>
+        </statisticline>
+        <statisticline>
+            <description>Total Methods Renamed</description>
+            <statistic>1</statistic>
+            <statistic>2.27 %</statistic>
+        </statisticline>
+        <statisticline>
+            <description>Total Fields Renamed</description>
+            <statistic>18</statistic>
+            <statistic>54.55 %</statistic>
+        </statisticline>
+        <statisticline>
+            <description>Total Properties Renamed</description>
+            <statistic>0</statistic>
+            <statistic>0.00 %</statistic>
+        </statisticline>
+        <statisticline>
+            <description>Total Events Renamed</description>
+            <statistic>0</statistic>
+            <statistic>0.00 %</statistic>
+        </statisticline>
+        <statisticline>
+            <description>Methods Renamed to 'b'</description>
+            <statistic>1</statistic>
+            <statistic>2.27 %</statistic>
+        </statisticline>
+    </statistics>
+</dotfuscatorMap>

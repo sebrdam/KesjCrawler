@@ -6,3 +6,47 @@ C:\Users\svs\Documents\Visual Studio 2013\Projects\KESJCrawler\KESJCrawler\bin\N
 C:\Users\svs\Documents\Visual Studio 2013\Projects\KESJCrawler\KESJCrawler\obj\Debug\KESJCrawler.dll
 C:\Users\svs\Documents\Visual Studio 2013\Projects\KESJCrawler\KESJCrawler\obj\Debug\KESJCrawler.pdb
 C:\Users\svs\Documents\Visual Studio 2013\Projects\KESJCrawler\KESJCrawler\obj\Debug\KESJCrawler.csprojResolveAssemblyReference.cache
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\KESJCrawler.dll
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\KESJCrawler.pdb
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\Newtonsoft.Json.dll
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\Newtonsoft.Json.xml
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\obj\Debug\KESJCrawler.dll
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\obj\Debug\KESJCrawler.pdb
+C:\Users\svs\Desktop\kesjTerminal\KESJCrawler\KESJCrawler\bin\KESJCrawler.dll.config
+C:\Users\svs\Desktop\kesjTerminal\KESJCrawler\KESJCrawler\bin\KESJCrawler.dll
+C:\Users\svs\Desktop\kesjTerminal\KESJCrawler\KESJCrawler\bin\KESJCrawler.pdb
+C:\Users\svs\Desktop\kesjTerminal\KESJCrawler\KESJCrawler\bin\Newtonsoft.Json.dll
+C:\Users\svs\Desktop\kesjTerminal\KESJCrawler\KESJCrawler\bin\Newtonsoft.Json.xml
+C:\Users\svs\Desktop\kesjTerminal\KESJCrawler\KESJCrawler\obj\Debug\KESJCrawler.csprojResolveAssemblyReference.cache
+C:\Users\svs\Desktop\kesjTerminal\KESJCrawler\KESJCrawler\obj\Debug\KESJCrawler.dll
+C:\Users\svs\Desktop\kesjTerminal\KESJCrawler\KESJCrawler\obj\Debug\KESJCrawler.pdb
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\Microsoft.CodeAnalysis.CSharp.Desktop.dll
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\Microsoft.CodeAnalysis.Desktop.dll
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\Microsoft.CodeAnalysis.dll
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\Microsoft.CodeAnalysis.VisualBasic.Desktop.dll
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\System.Collections.Immutable.dll
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\System.Reflection.Metadata.dll
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\Microsoft.CodeAnalysis.xml
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\Microsoft.CodeAnalysis.CSharp.xml
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\Microsoft.CodeAnalysis.CSharp.Desktop.xml
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\Microsoft.CodeAnalysis.CSharp.Workspaces.xml
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\Microsoft.CodeAnalysis.Desktop.xml
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\Microsoft.CodeAnalysis.VisualBasic.xml
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\Microsoft.CodeAnalysis.VisualBasic.Desktop.xml
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\Microsoft.CodeAnalysis.VisualBasic.Workspaces.xml
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\Microsoft.CodeAnalysis.Workspaces.xml
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\System.Collections.Immutable.xml
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\System.Reflection.Metadata.xml
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\obj\Debug\KESJCrawler.csprojResolveAssemblyReference.cache
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\KESJCrawler.dll.config
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\Microsoft.CodeAnalysis.CSharp.Workspaces.Desktop.dll
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\Microsoft.CodeAnalysis.VisualBasic.Workspaces.Desktop.dll
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\Microsoft.CodeAnalysis.Workspaces.Desktop.dll
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\Microsoft.CodeAnalysis.CSharp.Workspaces.Desktop.xml
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\Microsoft.CodeAnalysis.VisualBasic.Workspaces.Desktop.xml
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\Microsoft.CodeAnalysis.Workspaces.Desktop.xml

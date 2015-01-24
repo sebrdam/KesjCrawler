@@ -9,6 +9,12 @@ using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.Script.Serialization;
 
+/*
+  Post Json met alle data naar webservice api
+  In opdracht van Hogeschool Rotterdam module : INFPRJ2110
+  S. van Staden - 22-01-2015 - studentnr:0883388
+*/
+
 namespace KESJCrawler.App_Code
 {
     public class PostJson

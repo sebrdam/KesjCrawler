@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 12.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="12.0">
+ <Targets>
+  <Target Name="C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\KESJCrawler.dll">
+   <Modules>
+    <Module Name="kesjcrawler.dll">
+     <Namespaces>
+      <Namespace Name="KESJCrawler.App_Code">
+       <Types>
+        <Type Name="LogFile" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#LogMe(System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="1#" TypeName="UriParametersShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1054" Status="Active" Created="2015-01-13 13:27:29Z" FixCategory="Breaking">
+             <Issue Certainty="60" Level="Error" Path="c:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\App_Code" File="LogFile.cs" Line="16">Change the type of parameter 'url' of method 'LogFile.LogMe(string, string)' from string to System.Uri, or provide an overload of 'LogFile.LogMe(string, string)', that allows 'url' to be passed as a System.Uri object.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MatchRegex" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetComponentMatch(System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="1#" TypeName="UriParametersShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1054" Status="Active" Created="2015-01-13 13:27:29Z" FixCategory="Breaking">
+             <Issue Certainty="60" Level="Error" Path="c:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\App_Code" File="MatchRegex.cs" Line="25">Change the type of parameter 'url' of method 'MatchRegex.GetComponentMatch(string, string)' from string to System.Uri, or provide an overload of 'MatchRegex.GetComponentMatch(string, string)', that allows 'url' to be passed as a System.Uri object.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetFirstMatch(System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="1#" TypeName="UriParametersShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1054" Status="Active" Created="2015-01-13 13:27:29Z" FixCategory="Breaking">
+             <Issue Certainty="60" Level="Error" Path="c:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\App_Code" File="MatchRegex.cs" Line="13">Change the type of parameter 'url' of method 'MatchRegex.GetFirstMatch(string, string)' from string to System.Uri, or provide an overload of 'MatchRegex.GetFirstMatch(string, string)', that allows 'url' to be passed as a System.Uri object.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#StripPicUrl(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="UriReturnValuesShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1055" Status="Active" Created="2015-01-13 13:27:29Z" FixCategory="Breaking">
+             <Issue Certainty="60" Level="Error" Path="c:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\App_Code" File="MatchRegex.cs" Line="79">Change the return type of 'MatchRegex.StripPicUrl(string)' from string to System.Uri.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#StripPrijsToDouble(System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="1#" TypeName="UriParametersShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1054" Status="Active" Created="2015-01-13 13:27:29Z" FixCategory="Breaking">
+             <Issue Certainty="60" Level="Error" Path="c:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\App_Code" File="MatchRegex.cs" Line="51">Change the type of parameter 'url' of method 'MatchRegex.StripPrijsToDouble(string, string)' from string to System.Uri, or provide an overload of 'MatchRegex.StripPrijsToDouble(string, string)', that allows 'url' to be passed as a System.Uri object.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ReadConfig" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#getConfigList()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PassSystemUriObjectsInsteadOfStrings" Category="Microsoft.Usage" CheckId="CA2234" Status="Active" Created="2015-01-13 13:27:29Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\App_Code" File="ReadConfig.cs" Line="15">Modify 'ReadConfig.getConfigList()' to call 'WebRequest.Create(Uri)' instead of 'WebRequest.Create(string)'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ReadlUrl" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetResponse(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PassSystemUriObjectsInsteadOfStrings" Category="Microsoft.Usage" CheckId="CA2234" Status="Active" Created="2015-01-13 13:27:29Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\App_Code" File="ReadlUrl.cs" Line="13">Modify 'ReadlUrl.GetResponse(string)' to call 'WebRequest.Create(Uri)' instead of 'WebRequest.Create(string)'.</Issue>
+            </Message>
+            <Message Id="0#" TypeName="UriParametersShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1054" Status="Active" Created="2015-01-13 13:27:29Z" FixCategory="Breaking">
+             <Issue Certainty="60" Level="Error" Path="c:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\App_Code" File="ReadlUrl.cs" Line="13">Change the type of parameter 'url' of method 'ReadlUrl.GetResponse(string)' from string to System.Uri, or provide an overload of 'ReadlUrl.GetResponse(string)', that allows 'url' to be passed as a System.Uri object.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="PassSystemUriObjectsInsteadOfStrings" Category="Microsoft.Usage" CheckId="CA2234">
+   <Name>Pass System.Uri objects instead of strings</Name>
+   <Description>If there are two overloads one taking System.Uri and one taking System.String, library code should never call the string-based overload.</Description>
+   <Resolution Name="Default">Modify {0} to call {1} instead of {2}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182360.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="UriParametersShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1054">
+   <Name>URI parameters should not be strings</Name>
+   <Description>If a parameter name contains "uri" or "url" or "urn", and it's typed as string, the parameter type should be changed to System.Uri, unless there is an overload method where the same parameter is typed as System.Uri.</Description>
+   <Resolution Name="Default">Change the type of parameter {0} of method {1} from string to System.Uri, or provide an overload of {1}, that allows {0} to be passed as a System.Uri object.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182174.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="60">Error</MessageLevel>
+   <File Name="designrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="UriReturnValuesShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1055">
+   <Name>URI return values should not be strings</Name>
+   <Description>If a function name contains "uri" or "url" or "urn" and the return type is string, the return type should be changed to System.Uri.</Description>
+   <Resolution Name="Default">Change the return type of {0} from string to System.Uri.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182176.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="60">Error</MessageLevel>
+   <File Name="designrules.dll" Version="12.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

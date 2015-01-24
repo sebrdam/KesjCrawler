@@ -1,0 +1,12 @@
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\KESJCrawler.dll.config
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\KESJCrawler.dll
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\KESJCrawler.pdb
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\Newtonsoft.Json.dll
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\System.Collections.Immutable.dll
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\System.Reflection.Metadata.dll
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\Newtonsoft.Json.xml
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\System.Collections.Immutable.xml
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\bin\System.Reflection.Metadata.xml
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\obj\Release\KESJCrawler.dll
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\obj\Release\KESJCrawler.pdb
+C:\Users\0883388\Desktop\KESJCrawler\KESJCrawler\obj\Release\KESJCrawler.csprojResolveAssemblyReference.cache

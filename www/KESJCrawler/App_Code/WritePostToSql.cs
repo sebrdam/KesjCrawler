@@ -5,12 +5,16 @@ using System.IO;
 using System.Linq;
 using System.Web;
 
+/*
+  Write post naar file voor logging en testing en maak sql file
+  In opdracht van Hogeschool Rotterdam module : INFPRJ2110
+  S. van Staden - 22-01-2015 - studentnr:0883388
+*/
+
 namespace KESJCrawler.App_Code
 {
     public class WritePostToSql
     {
-         //Write post to file for logging and testing and make sql 
-
         public static void WriteToFile(string post)
         {
             string myFileName = String.Format("{0}__{1}", DateTime.Now.ToString("yyyyMMddhhmmss"), "post.sql");

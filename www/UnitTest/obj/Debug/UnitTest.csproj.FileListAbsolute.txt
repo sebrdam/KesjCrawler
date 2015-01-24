@@ -1,0 +1,9 @@
+C:\Users\0883388\Desktop\KESJCrawler\UnitTest\obj\Debug\UnitTest.csprojResolveAssemblyReference.cache
+C:\Users\0883388\Desktop\KESJCrawler\UnitTest\bin\Debug\UnitTest.dll
+C:\Users\0883388\Desktop\KESJCrawler\UnitTest\bin\Debug\UnitTest.pdb
+C:\Users\0883388\Desktop\KESJCrawler\UnitTest\bin\Debug\KESJCrawler.dll
+C:\Users\0883388\Desktop\KESJCrawler\UnitTest\bin\Debug\Newtonsoft.Json.dll
+C:\Users\0883388\Desktop\KESJCrawler\UnitTest\bin\Debug\KESJCrawler.pdb
+C:\Users\0883388\Desktop\KESJCrawler\UnitTest\bin\Debug\Newtonsoft.Json.xml
+C:\Users\0883388\Desktop\KESJCrawler\UnitTest\obj\Debug\UnitTest.dll
+C:\Users\0883388\Desktop\KESJCrawler\UnitTest\obj\Debug\UnitTest.pdb

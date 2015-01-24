@@ -4,6 +4,12 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using System.Web;
 
+/*
+  Get data van de pattern opgegeven in config file. 
+  In opdracht van Hogeschool Rotterdam module : INFPRJ2110
+  S. van Staden - 22-01-2015 - studentnr:0883388
+*/
+
 namespace KESJCrawler.App_Code
 {
     public class MatchRegex
